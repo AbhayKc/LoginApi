@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F6F6"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="300dp"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:text="Login To Your Account"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_15sdp"
+        android:gravity="center_vertical"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_gravity="center_vertical"
+        android:paddingStart="@dimen/_20sdp"
+        android:background="@drawable/shape_bottom_curve_purple"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="@drawable/svg_splash"
+        android:layout_marginLeft="@dimen/_50sdp"
+        android:layout_marginRight="@dimen/_50sdp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_weight="0.6"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_left_rect_white"
+            app:srcCompat="@drawable/svg_user"
+            android:padding="@dimen/_11sdp"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_right_curve_rect"
+            android:gravity="center_vertical"
+            android:hint="E-mail"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:padding="@dimen/_10sdp"
+            android:textSize="@dimen/_13sdp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_weight="0.6"
+        android:orientation="horizontal"
+        android:background="@drawable/shape_curve_rect_white">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_left_rect_white"
+            app:srcCompat="@drawable/svg_lock"
+            android:padding="@dimen/_11sdp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_40sdp"
+            app:passwordToggleEnabled="true"
+            android:textColorHint="#A9A9A9">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/shape_right_curve_rect"
+                android:gravity="center_vertical"
+                android:hint="Password"
+                android:imeOptions="actionNext"
+                android:inputType="textPassword"
+                android:padding="@dimen/_10sdp"
+                android:textSize="@dimen/_13sdp" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/loginButton"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_weight="0.6"
+        android:background="@drawable/shape_curve_rect_purple"
+        android:text="Login"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_16sdp"
+        android:layout_marginBottom="@dimen/_20sdp"/>
+
+
+</LinearLayout>
